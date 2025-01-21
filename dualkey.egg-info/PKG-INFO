@@ -1,8 +1,8 @@
 Metadata-Version: 2.1
 Name: dualkey
-Version: 1.0.6
+Version: 1.0.8
 Summary: A seedphrase encryption/decryption tool
-Home-page: https://github.com/ilovespectra/dualkey
+Home-page: https://github.com/ilovespectra/dual.key
 Author: Tanner McMullen
 License: MIT
 Classifier: Programming Language :: Python :: 3

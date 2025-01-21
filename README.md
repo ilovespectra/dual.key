@@ -90,7 +90,7 @@ It is a simple educational utility and should not be used for high-security appl
 
 Clone the repository
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/dualkey.git
+git clone https://github.com/ilovespectra/dual.key.git
 cd dualkey
 ```
 

@@ -1,6 +1,6 @@
 import sys
 
-VERSION = "1.0.6"
+VERSION = "1.0.8"
 
 def encrypt(plain_text, key, offset):
     if len(plain_text) > 300:
