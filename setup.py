@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="dualkey",
-    version="1.0.5",
+    version="1.0.6",
     packages=find_packages(),
     install_requires=[],
     entry_points={
@@ -22,4 +22,3 @@ setup(
         "Operating System :: OS Independent",
     ],
 )
-

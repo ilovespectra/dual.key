@@ -1,6 +1,6 @@
 import sys
 
-VERSION = "1.0.5"
+VERSION = "1.0.6"
 
 def encrypt(plain_text, key, offset):
     if len(plain_text) > 300:
@@ -25,7 +25,7 @@ YELLOW = '\033[93m'
 RED = '\033[91m'
 RESET = '\033[0m'
 
-if __name__ == "__main__":
+def main():
     print(f"{GREEN}\
     DDDDD   U   U   AAAAA   L       K   K   EEEEE   Y   Y\n\
     D    D  U   U  A     A  L       K  K    E        Y Y\n\
@@ -62,3 +62,6 @@ if __name__ == "__main__":
 
     else:
         print(f"{RED}Invalid option. Please enter 'E' for encrypt or 'D' for decrypt.{RESET}")
+
+if __name__ == "__main__":
+    main()
