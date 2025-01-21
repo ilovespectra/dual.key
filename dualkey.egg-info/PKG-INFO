@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: dualkey
-Version: 1.0.8
+Version: 1.0.9
 Summary: A seedphrase encryption/decryption tool
 Home-page: https://github.com/ilovespectra/dual.key
 Author: Tanner McMullen
@@ -103,7 +103,7 @@ It is a simple educational utility and should not be used for high-security appl
 
 Clone the repository
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/dualkey.git
+git clone https://github.com/ilovespectra/dual.key.git
 cd dualkey
 ```
 

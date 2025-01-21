@@ -1,6 +1,6 @@
 import sys
 
-VERSION = "1.0.8"
+VERSION = "1.0.9"
 
 def encrypt(plain_text, key, offset):
     if len(plain_text) > 300:
@@ -25,7 +25,22 @@ YELLOW = '\033[93m'
 RED = '\033[91m'
 RESET = '\033[0m'
 
+def print_help():
+    print(f"{YELLOW}Usage: dualkey{RESET}")
+    print("Run the command 'dualkey' to start the encryption/decryption tool.")
+    print("Options:")
+    print("  -h, --help      Show this help message and exit\n")
+    print("Instructions:")
+    print("  1. Choose whether to (E)ncrypt or (D)ecrypt.")
+    print("  2. Enter a 4-digit encryption key (e.g., 1234).")
+    print("  3. Enter a 4 to 6-digit offset value (e.g., 123456).")
+    print("  4. Input text to encrypt (max 300 characters) or decrypt an encrypted string.")
+
 def main():
+    if len(sys.argv) > 1 and sys.argv[1] in ("-h", "--help"):
+        print_help()
+        sys.exit(0)
+
     print(f"{GREEN}\
     DDDDD   U   U   AAAAA   L       K   K   EEEEE   Y   Y\n\
     D    D  U   U  A     A  L       K  K    E        Y Y\n\
