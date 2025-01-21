@@ -59,23 +59,24 @@ Encrypted Text: 1422395 1693201 1452487 1347403 1347403 1358632 1508570 1463723 
 ```bash
 Do you want to (E)ncrypt or (D)ecrypt? D
 Enter the encrypted text to decrypt: 1422395 1693201 1452487 1347403 ...
-Output:
 ```
-
+Output:
 ```bash
 Decrypted Text: my seed phrase
-How It Works
-The tool uses a simple formula to encrypt each character of the input:
 ```
+
+### 3. How It Works
+The tool uses a simple formula to encrypt each character of the input:
 ```sql
 Encrypted character = (ASCII value * key) - offset
-To decrypt, it reverses the formula:
 ```
+
+To decrypt, it reverses the formula:
 ```java
 Original ASCII = (Encrypted value + offset) // key
 ```
 
-## 2. Example Use Cases
+## Example Use Cases
 
 - Secure storage of cryptocurrency seed phrases
 - Encrypting personal notes
@@ -85,7 +86,7 @@ Original ASCII = (Encrypted value + offset) // key
 **⚠ This tool does not provide cryptographic security.**
 It is a simple educational utility and should not be used for high-security applications. Always rely on industry-standard encryption methods for sensitive data.
 
-## 3. Development
+## Development
 
 Clone the repository
 ```bash
@@ -104,7 +105,7 @@ Run the tool locally
 python dualkey.py
 ```
 
-## 4. Contributing
+## Contributing
 
 Contributions are welcome! To contribute:
 
@@ -114,11 +115,11 @@ Contributions are welcome! To contribute:
 - Push to your branch (git push origin feature-name)
 - Create a Pull Request
 
-## 5. License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-## 6. Contact
+## Contact
 For questions, suggestions, or issues, feel free to open an issue on GitHub or reach out via email:
 
 📧 denverhnt@gmail.com
