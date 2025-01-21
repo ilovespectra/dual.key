@@ -122,5 +122,5 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## Contact
 For questions, suggestions, or issues, feel free to open an issue on GitHub or reach out via email:
 
-📧 denverhnt@gmail.com
+📧 denverhnt@gmail.com </br>
 🐙 GitHub: @ilovespectra
