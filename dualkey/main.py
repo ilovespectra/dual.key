@@ -1,6 +1,6 @@
 import sys
 
-VERSION = "1.0.9"
+VERSION = "1.1.1"
 
 def encrypt(plain_text, key, offset):
     if len(plain_text) > 300:
@@ -47,7 +47,7 @@ def main():
     D    D  U   U  AAAAAAA  L       000     EEEE      Y\n\
     D    D  U   U  A     A  L       K  K    E         Y\n\
     DDDDD   UUUUU  A     A  LLLLL   K   K   EEEEE     Y{RESET}\n")
-    print(f"{YELLOW}Seedphrase Encryption/Decryption Tool v{VERSION}{RESET}\n")
+    print(f"{YELLOW}Encryption/Decryption Tool v{VERSION}{RESET}\n")
     
     while True:
         try:

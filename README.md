@@ -1,8 +1,8 @@
-# **DualKey - Seedphrase Encryption/Decryption Tool**
+# **DualKey - Encryption/Decryption Tool**
 
 ![DualKey](https://img.shields.io/badge/Python-3.11-blue) ![License](https://img.shields.io/badge/license-MIT-green)
 
-**DualKey** is a simple command-line tool for encrypting and decrypting sensitive text, such as seed phrases, using a user-defined encryption key and offset.
+**DualKey** is a simple command-line tool for encrypting and decrypting sensitive text using a user-defined encryption key and offset.
 
 ---
 
@@ -47,22 +47,24 @@ You will be prompted to enter an encryption key and offset.
 ```bash
 Enter encryption key (4-digit number): 1234
 Enter offset value (4 to 6 digit number): 56789
-Do you want to (E)ncrypt or (D)ecrypt? E
-Enter text to encrypt (max 300 characters): my seed phrase
+Do you want to (E)ncrypt or (D)ecrypt? e
+Enter text to encrypt (max 300 characters): hello world
 ```
 Output:
 ```bash
-Encrypted Text: 1422395 1693201 1452487 1347403 1347403 1358632 1508570 1463723 1422395 1324952 1452487 1422395 1463723 1441258 1399940
+Encrypted Text: 71547 67845 76483 76483 80185 -17301 90057 80185 83887 76483 66611
 ```
 
 ### 2. Decryption Example
 ```bash
-Do you want to (E)ncrypt or (D)ecrypt? D
-Enter the encrypted text to decrypt: 1422395 1693201 1452487 1347403 ...
+Enter encryption key (4-digit number): 1234
+Enter offset value (4 to 6 digit number): 56789
+Do you want to (E)ncrypt or (D)ecrypt? d
+Enter the encrypted text to decrypt: 71547 67845 76483 76483 80185 -17301 90057 
 ```
 Output:
 ```bash
-Decrypted Text: my seed phrase
+Decrypted Text: hello world
 ```
 
 ### 3. How It Works
@@ -78,7 +80,7 @@ Original ASCII = (Encrypted value + offset) // key
 
 ## Example Use Cases
 
-- Secure storage of cryptocurrency seed phrases
+- Higher security when sending or storing sensitive content digitally
 - Encrypting personal notes
 - Quick encryption for sensitive data on the go
 - Security Notice
