@@ -1,6 +1,6 @@
 import sys
 
-VERSION = "1.1.1"
+VERSION = "1.1.2"
 
 def encrypt(plain_text, key, offset):
     if len(plain_text) > 300:
@@ -41,6 +41,7 @@ def main():
         print_help()
         sys.exit(0)
 
+    print("View Source on GitHub at https://github.com/ilovespectra/dual.key.git")
     print(f"{GREEN}\
     DDDDD   U   U   AAAAA   L       K   K   EEEEE   Y   Y\n\
     D    D  U   U  A     A  L       K  K    E        Y Y\n\
